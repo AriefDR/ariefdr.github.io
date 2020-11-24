@@ -1,0 +1,101 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+
+}
+
+.kotakKiri {
+    color: aliceblue;
+}
+
+.myFoto {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+blockquote p {
+    font-size: 17px;
+}
+
+.biodata {
+    margin: 10px 0;
+
+}
+
+.moreinfo ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 10px;
+}
+
+.idntity {
+    margin: 20px 0;
+}
+
+.idntity,
+.educations,
+.generalInterest,
+.organization,
+.workingExperince,
+.projeks {
+    margin-left: 15px
+}
+
+.fname {
+    font-size: 90px;
+    color: rgb(74, 140, 179);
+    font-weight: 700;
+}
+
+.lname {
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(74, 140, 179);
+    letter-spacing: 5px;
+}
+
+.educations h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.educations ul li {
+    margin: 10px 0;
+}
+
+.sname,
+.drange {
+    display: inline;
+}
+
+.sname {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.drange {
+    font-size: 10px;
+}
+
+@media (max-width: 575.98px) {
+    .idntity {
+        margin-left: 0;
+    }
+
+    .fname {
+        font-size: 70px;
+    }
+
+    .lname {
+        font-size: 40px;
+    }
+}
