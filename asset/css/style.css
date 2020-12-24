@@ -10,7 +10,10 @@ html {
     scroll-behavior: smooth;
     font-family: Cambria;
 }
-
+.garisBawah{
+    border-bottom: 2px solid white;
+    width: 200px;
+}
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -31,6 +34,7 @@ html {
 /* all similar content styling codes */
 section {
     padding: 100px 0;
+    min-height: 100vh;
 }
 
 .max-width {
@@ -196,9 +200,11 @@ section {
     color: rgb(54, 170, 216);
     background: none;
 }
-.btn-outline-primary{
+
+.btn-outline-primary {
     margin: 0 5px;
 }
+
 .c-blue {
     color: rgb(0, 107, 150);
 }
@@ -216,29 +222,76 @@ section {
     color: white;
 }
 
-.bar-1,
-.my-skills {
-    width: 90%;
-    margin: 15px auto 5px;
+/* card */
+.card {
+    position: relative;
+    height: 280px;
+    border-radius: 16px;
+    box-shadow: 0 0 13px 0px rgba(0, 0, 0, .3);
+    transition: .5s;
+    overflow: hidden;
+    margin: .85rem;
 }
 
-.bar-inner {
-    width: 0;
-    height: 35px;
-    line-height: 35px;
-    background: #db3a34;
-    border-radius: 5px 0 0 5px;
+.card:hover {
+    height: 530px;
 }
 
-.bar-percent {
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    font-size: 18px;
+.card img {
+    width: 100%;
+    border-radius: 16px;
+    transition: .5s;
 }
 
-.contactUs li {
-    margin-top: 20px;
+.card:hover img {
+    border-radius: 16px 16px 0 0;
+}
+
+.card .card-body {
+    padding: .5rem .85rem 1rem;
+    height: 0;
+}
+
+.card .card-body h6 {
+    margin: .5rem 0;
+    font-size: .85rem;
+    color: #006B96;
+    letter-spacing: 3px;
+}
+
+.card .card-body p {
+    text-align: justify;
+    font-size: .9rem;
+    line-height: 25px;
+}
+
+.card .card-body div {
+    text-align: right;
+    width: 100%;
+}
+
+#gInterest {
+    min-height: 130vh;
+}
+
+.codeSkill {
+    transition: transform .2s;
+}
+
+.codeSkill:hover {
+    -ms-transform: scale(1.3);
+    /* IE 9 */
+    -webkit-transform: scale(1.3);
+    /* Safari 3-8 */
+    transform: scale(1.3);
+}
+
+ul li a {
+    color: white;
+}
+
+ul li a:hover {
+    color: rgb(241, 221, 221);
 }
 
 /* footer section styling */
@@ -266,8 +319,22 @@ footer span a:hover {
 }
 
 @media (max-width: 991px) {
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 37px;
+    }
+
     .max-width {
         padding: 0 50px;
+    }
+    .card{
+        height: 200px;
+    }
+    .card:hover {
+        height: 550px;
     }
 }
 
@@ -276,6 +343,7 @@ footer span a:hover {
         display: block;
         z-index: 999;
     }
+
 
     .menu-btn i.active:before {
         content: "\f00d";
@@ -307,12 +375,16 @@ footer span a:hover {
         font-size: 25px;
     }
 
+    .home .home-content .text-1 {
+        font-size: 30px;
+    }
+
     .home .home-content .text-2 {
-        font-size: 70px;
+        font-size: 59px;
     }
 
     .home .home-content .text-3 {
-        font-size: 35px;
+        font-size: 34px;
     }
 
     .home .home-content a {
@@ -331,27 +403,43 @@ footer span a:hover {
         padding: 0 23px;
     }
 
+    .home .home-content .text-1 {
+        font-size: 25px;
+    }
+
     .home .home-content .text-2 {
-        font-size: 60px;
+        font-size: 43px;
     }
 
     .home .home-content .text-3 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .home .home-content a {
         font-size: 20px;
     }
+    .card{
+        height: 350px;
+    }
+
+    .card:hover{
+        height: 660px;
+    }
+    
 
 }
 
 @media (max-width: 500px) {
+    .home .home-content .text-1 {
+        font-size: 28px;
+    }
+
     .home .home-content .text-2 {
-        font-size: 50px;
+        font-size: 39px;
     }
 
     .home .home-content .text-3 {
-        font-size: 27px;
+        font-size: 24px;
     }
 
     .scroll-up-btn {
@@ -361,5 +449,9 @@ footer span a:hover {
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+    ul li a {
+        color: white;
+        font-size: 20px;
     }
 }

@@ -1,0 +1,46 @@
+.column {
+    float: left;
+    width: 33.33%;
+    display: none;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: #343A40;
+    padding: 10px;
+    color: white;
+}
+
+.show {
+    display: block;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.act {
+    background-color: #006B96;
+    color: white;
+}
+
+
+@media (max-width: 690px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media (max-width: 470px) {
+    .column {
+        margin: auto;
+        width: 80%;
+    }
+
+}
+
