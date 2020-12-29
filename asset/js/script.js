@@ -14,14 +14,6 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
 
-        if(this.scrollY > 1200){
-            $(".bar").each(function(){
-                $(this).find(".bar-inner").animate({
-                  width: $(this).attr("data-width")
-                },2000)
-              });
-        }
-
     });
 
     // slide-up script
@@ -29,13 +21,17 @@ $(document).ready(function(){
         $('html').animate({scrollTop: 0});
         // removing smooth scroll on slide-up button click
         $('html').css("scrollBehavior", "auto");
-    });
+    });  
 
-    $('.navbars .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
-        $('html').css("scrollBehavior", "smooth");
-    });
-   
+    //smoot scroll
+    $('.page-scroll').on('click', function(e) {
+        var tujuan = $(this).attr('href');
+        var elemenTujuan = $(tujuan);
+        $('html , body').animate({
+         scrollTop: elemenTujuan.offset().top - 50
+        });
+        e.preventDefault();
+       });
 
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
