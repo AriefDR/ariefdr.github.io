@@ -9,10 +9,12 @@
 html {
     font-family: Cambria;
 }
-.garisBawah{
+
+.garisBawah {
     border-bottom: 2px solid white;
     width: 200px;
 }
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -208,56 +210,12 @@ section {
     color: white;
 }
 
-/* card */
-.card {
-    position: relative;
-    height: 280px;
-    border-radius: 16px;
-    box-shadow: 0 0 13px 0px rgba(0, 0, 0, .3);
-    transition: .5s;
-    overflow: hidden;
-    margin: .85rem;
+#gInterest {
+    min-height: 123vh;
 }
 
 .card:hover {
-    height: 530px;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 16px;
-    transition: .5s;
-}
-
-.card:hover img {
-    border-radius: 16px 16px 0 0;
-}
-
-.card .card-body {
-    padding: .5rem .85rem 1rem;
-    height: 0;
-}
-
-.card .card-body h6 {
-    margin: .5rem 0;
-    font-size: .85rem;
-    color: #006B96;
-    letter-spacing: 3px;
-}
-
-.card .card-body p {
-    text-align: justify;
-    font-size: .9rem;
-    line-height: 25px;
-}
-
-.card .card-body div {
-    text-align: right;
-    width: 100%;
-}
-
-#gInterest {
-    min-height: 130vh;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .codeSkill {
@@ -280,21 +238,16 @@ ul li a:hover {
     color: rgb(241, 221, 221);
 }
 
+.btnPortfolio {
+    margin-top: 5px;
+}
+
 /* footer section styling */
 footer {
     background: #006B96;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
-}
-
-footer span a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer span a:hover {
-    text-decoration: none;
 }
 
 /* responsive media query start */
@@ -316,15 +269,7 @@ footer span a:hover {
     .max-width {
         padding: 0 50px;
     }
-    .card{
-        height: 200px;
-    }
-    .card:hover {
-        height: 550px;
-    }
-    .col-lg-4{
-        width: 51%;
-    }
+
 }
 
 @media (max-width: 947px) {
@@ -384,18 +329,17 @@ footer span a:hover {
     .max-width {
         max-width: 930px;
     }
-    .col-lg-4{
-        width: 51%;
-    }
+
 
 }
-@media (max-width: 770px) {
 
-    .col-md-3{
-        width: 32%;
+@media (max-width: 768px) {
+
+    .codeSkill img {
+        width: 100px;
     }
-
 }
+
 @media (max-width: 690px) {
     .max-width {
         padding: 0 23px;
@@ -416,15 +360,16 @@ footer span a:hover {
     .home .home-content a {
         font-size: 20px;
     }
-    .card{
-        height: 350px;
+}
+
+@media(max-width: 576px) {
+    .col-sm-3 {
+        width: 50%;
     }
 
-    .card:hover{
-        height: 660px;
+    .codeSkill img {
+        width: 90px;
     }
-    
-
 }
 
 @media (max-width: 500px) {
@@ -448,11 +393,9 @@ footer span a:hover {
         font-size: 23px;
         line-height: 38px;
     }
+
     ul li a {
         color: white;
         font-size: 20px;
-    }
-    .col-lg-4{
-        width: 51%;
     }
 }
