@@ -222,7 +222,19 @@
             <div class="row">
                 <div class="column campus">
                     <div class="content">
-                        <img src="/asset/img/rxPlayer.png" alt="RxPlayer" style="width:100%">
+                        <a href="https://ariefdr.github.io/blogGogreen/" target="_blank">
+                            <img src="/asset/img/goGreen.png" alt="goGreen" style="width:100%">
+                        </a>
+                        <h4>GoGreen</h4>
+                        <p>gogreen merupakan sebuah website peduli dengan alam sekitar, mulai dari buang sampah pada
+                            tempatnya, menanam pohon dan menghemat air.</p>
+                    </div>
+                </div>
+                <div class="column campus">
+                    <div class="content">
+                        <a href="https://ariefdr.github.io/rxPlayer/" target="_blank">
+                            <img src="/asset/img/rxPlayer.png" alt="RxPlayer" style="width:100%">
+                        </a>
                         <h4>RxPlayer</h4>
                         <p>rxplayer merupakan aplikasi berbasis website yang menampilkan daftar lagu populer bergenre
                             K-Pop dan POP.</p>
@@ -238,7 +250,7 @@
                 </div>
                 <div class="column campus">
                     <div class="content">
-                        <img src="/asset/img/Flowelto-Shop.png" alt="Bebas" style="width:100%">
+                        <img src="/asset/img/Flowelto-Shop.png" alt="Flowelto-Shop" style="width:100%">
                         <h4>Flowelto-Shop</h4>
                         <p>flowlto shop merupakan sebuah website e-commerce yang menjual berbagai jenis bunga dan
                             pelanggan dapat membeli bunga tersebut.</p>
@@ -247,7 +259,7 @@
 
                 <div class="column company">
                     <div class="content">
-                        <img src="/asset/img/blankPict.png" alt="Car" style="width:100%" height="190">
+                        <img src="/asset/img/blankPict.png" alt="company profile" style="width:100%" height="190">
                         <h4>Company Profile</h4>
                         <p>sebuah web profil suatu perusahaan yang menampilkan baackground perusahaan mulai dari
                             partner, owner, tentang perusahaan dan event.</p>
@@ -256,15 +268,19 @@
 
                 <div class="column individu">
                     <div class="content">
-                        <img src="/asset/img/goGreen.png" alt="goGreen" style="width:100%">
-                        <h4>GoGreen</h4>
-                        <p>gogreen merupakan sebuah website peduli dengan alam sekitar, mulai dari buang sampah pada
-                            tempatnya, menanam pohon dan menghemat air.</p>
+                        <a href="https://hishot.himti.or.id/" target="_blank">
+                            <img src="asset/img/hishot.png" alt="hishot" style="width:100%" height="190">
+                        </a>
+                        <h4>Hishot</h4>
+                        <p>sebuah event organisasi himti khusu untuk mahasiwa TI Binus. Event ini mahasiswa TI Binus
+                            dapat mengikuti workshop, seminar dan study tour.
+
+                        </p>
                     </div>
                 </div>
                 <div class="column individu">
                     <div class="content">
-                        <img src="asset/img/blankPict.png" alt="Car" style="width:100%" height="190">
+                        <img src="asset/img/blankPict.png" alt="PomiPlayer" style="width:100%" height="190">
                         <h4>PoMiPlayer</h4>
                         <p>sebuah aplikasi mobile yang dapat memutar musik secara offline, aplikasi ini dibangung di
                             platform android dan hanya dapat memutar musik saja.</p>
@@ -272,9 +288,10 @@
                 </div>
                 <div class="column individu">
                     <div class="content">
-                        <img src="asset/img/technovation.png" alt="Car" style="width:100%" height="190">
+                        <img src="asset/img/technovation.png" alt="Tecnovation" style="width:100%" height="190">
                         <h4>Technovation</h4>
-                        <p>ebuah website yang menyediakan competisi dan seminar mengenai perkembangan teknologi yang semakin maju di jaman modern.
+                        <p>sebuah website yang menyediakan competisi dan seminar mengenai perkembangan teknologi yang
+                            semakin maju di jaman modern.
 
                         </p>
                     </div>
@@ -337,7 +354,8 @@
     </section>
     <!-- footer section start -->
     <footer>
-        <span>Created By AriefDr | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+        <span>Created By AriefDr | <span class="far fa-copyright"></span> <span id="year"></span> All rights
+            reserved.</span>
     </footer>
     <script src="/asset/js/jquery.min.js"></script>
     <script src="/asset/js/popper.min.js"></script>
@@ -345,7 +363,12 @@
     <script src="asset/js/filterPortfolio.js"></script>
     <script src="/asset/js/typed.min.js"></script>
     <script src="/asset/js/script.js"></script>
-
+    <script>
+        //curr year
+        var date = new Date();
+        var year = date.getFullYear();
+        document.getElementById("year").innerHTML = year;
+    </script>
 </body>
 
 </html>

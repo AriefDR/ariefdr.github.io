@@ -238,6 +238,10 @@ ul li a:hover {
     color: rgb(241, 221, 221);
 }
 
+.content h4 {
+    margin-top: 7px;
+}
+
 .btnPortfolio {
     margin-top: 5px;
 }
