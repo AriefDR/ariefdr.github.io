@@ -1,105 +1,432 @@
 <!DOCTYPE html>
-<html>
+<!-- Created By CodingNepal -->
+<html lang="en">
 
 <head>
-    <title>Website Under Maintenance</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
-    <style type="text/css">
-        body {
-            font-family: 'Teko', sans-serif;
-            background-color: #f2f2f2;
-            margin: 0px;
-        }
-
-        section {
-            text-align: center;
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        h2,
-        p {
-            color: #3867d6;
-            margin: 0px;
-        }
-
-        h2 {
-            font-size: 62px;
-            padding-top: 20px;
-        }
-
-        p {
-            font-size: 40px;
-            padding-bottom: 20px;
-        }
-
-        img {
-            max-width: 50%;
-        }
-
-        a {
-            background: #3867d6;
-            border-radius: 4px;
-            outline: none;
-            border: 0px;
-            color: #fff;
-            font-size: 34px;
-            cursor: pointer;
-            text-decoration: none;
-            padding: 5px 25px;
-        }
-
-        a:hover {
-            background-color: #1d56de;
-        }
-
-        @media(max-width: 625px) {
-            h2 {
-                font-size: 50px;
-            }
-
-            p {
-                font-size: 30px;
-            }
-
-            img {
-                max-width: 100%;
-            }
-        }
-
-        @media(max-width: 492px) {
-            h2 {
-                font-size: 30px;
-            }
-
-            a {
-                font-size: 25px;
-            }
-
-            p {
-                font-size: 25px;
-                line-height: 26px;
-            }
-
-            img {
-                max-width: 100%;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="icon_path" type="image/icon type"> -->
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <link rel="stylesheet" href="/asset/css/filterPortfolio.css">
 </head>
 
 <body>
-    <section>
-        <img src="./asset/img/Maintenance.svg">
-        <h2>We build something new for you</h2>
-        <p>Our website will not ne avalible during this time. we will back soon</p>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbars">
+        <div class="max-width">
+            <div class="logo"><a href="">Brxl<span>e'0</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn page-scroll">Home</a></li>
+                <li><a href="#about" class="menu-btn page-scroll">About</a></li>
+                <li><a href="#gInterest" class="menu-btn page-scroll">Interests</a></li>
+                <li><a href="#skills" class="menu-btn page-scroll">Skills</a></li>
+                <li><a href="#portfolio" class="menu-btn page-scroll">Portfolio</a></li>
+                <li><a href="#contact" class="menu-btn page-scroll">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, My Name is</div>
+                <div class="text-2">Arief Dwi Rachmadian</div>
+                <div class="text-3">I'm a <span class="typing"></span></div>
+                <a href="#about" class="page-scroll">About Me</a>
+            </div>
+        </div>
     </section>
+    <section class="aboutMe" id="about">
+        <div class="max-width">
+            <h1 class="text-center">About <span style="color: rgb(0, 107, 150);">Me</span></h1><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+                        <img src="/asset/img/photo.jpg" class="img-fluid" alt="Responsive image" width="400">
+                    </div>
+                    <div class="col-lg-8">
+                        <p class="text-justify">
+                            I'm a <b>Bachelor of Computer Science Major and Database Minor</b> from Bina Nusantara
+                            University who
+                            passionate about <b>Data Science, Software Engineering,</b> and <b>Web Development</b>. I
+                            love to
+                            <b>analyzing data </b>and have knowledge of <b>using Python, SQL, Data Cleansing, Data
+                                Visualization,</b> and
+                            <b>Create Machine Learning such as Supervised Learning and Unsupervised Learning</b>.
+                        </p>
+                        <p class="text-justify">
+                            I have a hobby that is <b>quite extreme, namely hiking</b>. Every year I usually go on a
+                            hike with
+                            my friends. From hiking activities, I learned many things such as <b>time management,
+                                solidarity, leadership,
+                                teamwork, decision making, and helping each other</b>. Apart from that I have other
+                            hobbies such as badminton, swimming and running.
+                        </p>
+                        <!-- <p class="text-justify">
+                            Quote : <q><i></i>.</q>
+                        </p> -->
+                        <a href="/asset/cv/New-Arief-Dwi-Rachmadian-RESUME.pdf" target="_blank"
+                            class="btn btn-outline-info">Downlaod CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services bg-dark" id="gInterest">
+        <div class="max-width">
+            <div class="container">
+                <h1 class="text-center text-white">Interests</h1> <br>
+                <div class="row justify-content-md-center">
+                    <div class="col-sm-4" style="margin: 10px 0px;">
+                        <div class="card">
+                            <img src="/asset/img/datascience.jpg" alt="datascience">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="color: #006B96; font-weight: bold;">Data
+                                    Science</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="margin: 10px 0px;">
+                        <div class="card">
+                            <img src="/asset/img/software.jpg" alt="software engineering">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="color: #006B96; font-weight: bold;">Software
+                                    Engineering</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="margin: 10px 0px;">
+                        <div class="card">
+                            <img src="/asset/img/webDevelopment.png" alt="webDevelopment">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="color: #006B96; font-weight: bold;">Web
+                                    Development</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="max-width">
+            <div class="container">
+                <h1 class="text-center">Skills</h1> <br>
+                <div class="row justify-content-md-center">
+                    <div class="col-sm-3" style="margin: 15px 0">
+                        <div class="text-center codeSkill">
+                            <img src="/asset/img/html5.png" alt="html5" width="140">
+                            <h5>HTML</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="margin: 15px 0;">
+                        <div class="text-center codeSkill">
+                            <img src="/asset/img/css3.png" alt="css" width="140">
+                            <h5>CSS</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="margin: 15px 0;">
+                        <div class="text-center codeSkill">
+                            <img src="/asset/img/js5.png" alt="js" width="140">
+                            <h5>Javascript</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3" style="margin: 15px 0;">
+                        <div class="text-center codeSkill">
+                            <img src="/asset/img/laravel.png" alt="Laravel" width="140">
+                            <h5>Laravel</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3" style="margin: 15px 0;">
+                        <div class="text-center codeSkill">
+                            <img src="/asset/img/nodejs.png" alt="Nodejs" width="178">
+                            <h5>Node Js</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="margin: 15px 0;">
+                        <div class="text-center codeSkill">
+                            <img src="asset/img/Golang.png" alt="Golang" width="140">
+                            <h5>Go</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="margin: 15px 0;">
+                        <div class="text-center codeSkill">
+                            <img src="/asset/img/python.png" alt="Pyhton" width="140">
+                            <h5>Python 3</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3" style="margin: 15px 0;">
+                        <div class="text-center codeSkill">
+                            <img src="/asset/img/sql.png" alt="SQL" width="140">
+                            <h5>SQL</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="margin: 15px 0;">
+                        <div class="text-center codeSkill">
+                            <img src="/asset/img/jupyter-notebook.png" alt="Jupyter Notebook" width="120">
+                            <h5>Jupyter Notebook</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="margin: 15px 0;">
+                        <div class="text-center codeSkill">
+                            <img src="/asset/img/microsoft-excel.png" alt="Excel" width="180">
+                            <h5>Microsoft Excel</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="margin: 15px 0;">
+                        <div class="text-center codeSkill">
+                            <img src="/asset/img/tableau.png" alt="Tableau" width="208">
+                            <h5>Tableau</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="bg-dark">
+        <div class="max-width">
+            <h1 class="text-center text-white">Portfo<span style="color: rgb(0, 107, 150);">lio</span></h1><br>
+            <div id="myBtnContainer">
+                <button class="btn btnPortfolio act" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn btnPortfolio" onclick="filterSelection('intern')"> Internship</button>
+                <button class="btn btnPortfolio" onclick="filterSelection('campus')"> Campus Project</button>
+                <button class="btn btnPortfolio" onclick="filterSelection('organization')"> Organization Project</button>
+                <button class="btn btnPortfolio" onclick="filterSelection('individu')"> Individu Project</button>
+            </div> <br>
+            <div class="row">
+                <div class="column intern">
+                    <div class="content">
+                        <img src="/asset/img/blankPict.png" alt="company profile" style="width:100%" height="190">
+                        <h4>Bookride</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">PT. Acset Indonusa Tbk</h6>
+                        <ul class="list-unstyled">Bookride is a web application provided to meet the needs of employees in the form of vehicles and drivers for business trips. Bookride is developed using Angular JS and .NET
+                            <li>Scope of Work :</li>
+                            <ul>
+                                <li class="ml-4">
+                                    Integrate Bookride Database with Helpdesk
+                                </li>
+                                <li class="ml-4">
+                                    Create Achievement Graph Page for Each GA
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column intern">
+                    <div class="content">
+                        <img src="/asset/img/blankPict.png" alt="company profile" style="width:100%" height="190">
+                        <h4>Portal Inovation</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">PT. Acset Indonusa Tbk</h6>
+                        <ul class="list-unstyled">Portal Innovation is a website used by companies to find the innovations from each employee. This website is developed using Angular JS and Node JS
+                            <li>Scope of Work :</li>
+                            <ul>
+                                <li class="ml-4">
+                                    Fixed a bug when updating data from excel
+                                </li>
+                                <li class="ml-4">
+                                    Added search filter by division and department
+                                </li>
+                                <li class="ml-4">
+                                    Added delete function on jury selection
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column intern">
+                    <div class="content">
+                        <img src="/asset/img/blankPict.png" alt="company profile" style="width:100%" height="190">
+                        <h4>Document Management System</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">PT. Acset Indonusa Tbk</h6>
+                        <ul class="list-unstyled">
+                            The DMS is a repository for legal documents, agreements (excluding construction contracts), and other documents.
+                            <li>Scope of Work :</li>
+                            <ul>
+                                <li class="ml-4">
+                                    Change ui/ux to make it look more modern
+                                </li>
+                                <li class="ml-4">
+                                    Added division table and made some division based validation
+                                </li>
+                                <li class="ml-4">
+                                    Create an API that can be used by other applications
+                                </li>
+                                <li class="ml-4">
+                                    Create an API that can be used by other applications
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column campus">
+                    <div class="content">
+                        <img src="/asset/img/Flowelto-Shop.png" alt="Flowelto-Shop" style="width:100%">
+                        <h4>Flowelto-Shop</h4>
+                        <ul class="list-unstyled">
+                            <li>Flowelto-Shop is an e-commerce website that sells various types of flowers and customers
+                                can buy
+                                these flowers. develop using HTML, CSS, Javascript, Laravel, MySQL.</li>
+                            <li>Scope of Work : </li>
+                            <ul>
+                                <li class="ml-4">Design UI/UX</li>
+                                <li class="ml-4">Design the Database</li>
+                                <li class="ml-4">Create a Dashboard Manager Page</li>
+                                <li class="ml-4">Create, Read, Update, Delete Flower (Manager)</li>
+                                <li class="ml-4">Create Flower Detail Page, Add to Cart, and Payment Page</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column campus">
+                    <div class="content">
+                        <img src="asset/img/blankPict.png" alt="PomiPlayer" style="width:100%" height="190">
+                        <h4>PoMiPlayer</h4>
+                        <p>PoMiPlayer is a mobile application that can play music offline, this application is built on the Android platform and can only play music.</p>
+                    </div>
+                </div>
+                <div class="column campus">
+                    <div class="content">
+                        <a href="https://ariefdr.github.io/blogGogreen/" target="_blank">
+                            <img src="/asset/img/goGreen.png" alt="goGreen" style="width:100%">
+                        </a>
+                        <h4>GoGreen</h4>
+                        <p>Static websites are built using HTML, CSS and JavaScript. To make it easier in the responsive
+                            process I use the bootstrap version 4 framework.</p>
+                    </div>
+                </div>
+                <div class="column campus">
+                    <div class="content">
+                        <a href="https://ariefdr.github.io/rxPlayer/" target="_blank">
+                            <img src="/asset/img/rxPlayer.png" alt="RxPlayer" style="width:100%">
+                        </a>
+                        <h4>RxPlayer</h4>
+                        <p>RxPlayer is a static website-based application that displays a list of popular songs of the
+                            K-Pop and POP genres. This website was built using HTML, CSS and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="column campus">
+                    <div class="content">
+                        <img src="/asset/img/bebas.png" alt="Bebas" style="width:100%">
+                        <h4>Bebas</h4>
+                        <p>Bebas is a static website that displays popular destinations in Indonesia, the web provides a
+                            data searching feature. website development using HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+
+                <div class="column organization">
+                    <div class="content">
+                        <a href="https://hishot.himti.or.id/" target="_blank">
+                            <img src="asset/img/hishot.png" alt="hishot" style="width:100%" height="190">
+                        </a>
+                        <h4>Hishot</h4>
+                        <p>HISHOT stands for HIMTI Seminar-Workshop and Study Tour. HISHOT is an annual event held by
+                            HIMTI Bina Nusantara to enrich our participants' experience
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column intern">
+                    <div class="content">
+                        <img src="/asset/img/blankPict.png" alt="company profile" style="width:100%" height="190">
+                        <h4>Company Profile</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">PT. Tri Mitra Resources</h6>
+                        <ul class="list-unstyled">Develop a company profile website that is used by the company to
+                            introduce various information about a company,
+                            including the company's vision, mission, goals, and history
+                            <li>Scope of Work :</li>
+                            <ul>
+                                <li class="ml-4">Adding the function of the company's activities using JavaScript and CI
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- END GRID -->
+            </div>
+        </div>
+    </section>
+    <section id="contact" style=" min-height: 10vh; background-color: #006B96;">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-4">
+                    <div class="garisBawah">
+                        <h3 class="text-white">Social Media</h3>
+                    </div><br>
+                    <div class="text-justify" style="width: 300px;">
+                        <ul class="list-unstyled">
+                            <li style="font-size: 23px;"><a href="https://instagram.com/brxle0" target="_blank"
+                                    style="text-decoration: none;"><i class="fab fa-instagram"></i> Brxle0</a></li>
+                            <li style="font-size: 23px;"><a href="https://web.facebook.com/Arief06162000/"
+                                    target="_blank" style="text-decoration: none;"><i
+                                        class="fab fa-facebook-square"></i> arief dwi rachmadian</a></li>
+                            <li style="font-size: 23px;"><a
+                                    href="https://www.linkedin.com/in/arief-dwi-rachmadian-ba2719152/" target="_blank"
+                                    style="text-decoration: none;"><i class="fab fa-linkedin-in"></i>
+                                    arief-dwi-rachmadian</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="garisBawah">
+                        <h3 class="text-white">Certificate</h3>
+                    </div><br>
+                    <div class="text-justify" style="width: 200px;">
+                        <ul class="list-unstyled">
+                            <li style="font-size: 23px;">asd</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="garisBawah">
+                        <h3 class="text-white">Contact</h3>
+                    </div><br>
+                    <div class="text-justify">
+                        <ul class="list-unstyled">
+                            <li style="font-size: 23px;"><a href="" style="text-decoration: none;"><i
+                                        class="fa fa-envelope"></i> ariefdwir16@gmail.com</a></li>
+                            <li style="font-size: 23px;"><a href="" style="text-decoration: none;"><i
+                                        class="fa fa-envelope"></i> arief.rachmadian@binus.ac.id</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section start -->
+    <footer>
+        <span>Created By AriefDr | <span class="far fa-copyright"></span> <span id="year"></span> All rights
+            reserved.</span>
+    </footer>
+    <script src="/asset/js/jquery.min.js"></script>
+    <script src="/asset/js/popper.min.js"></script>
+    <script src="/asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/filterPortfolio.js"></script>
+    <script src="/asset/js/typed.min.js"></script>
+    <script src="/asset/js/script.js"></script>
+    <script>
+        //curr year
+        var date = new Date();
+        var year = date.getFullYear();
+        document.getElementById("year").innerHTML = year;
+    </script>
 </body>
 
 </html>
